@@ -35,9 +35,9 @@ gulp.task('minifyjs', function () {
     .pipe($.babel({ // 语法转换 es6->es5
       presets: ['es2015']
     }))
-    .pipe(gulp.dest('build/js'))// 将gulp内存中的数据流输出指定目录下
-    .pipe($.concat('built.js'))
-    .pipe(gulp.dest('./build/js'))
+    // .pipe(gulp.dest('build/js'))// 将gulp内存中的数据流输出指定目录下
+    // .pipe($.concat('built.js'))
+    // .pipe(gulp.dest('./build/js'))
     // .pipe($.uglify())  // 压缩js代码
     // .pipe($.rename('dist.min.js')) // 重命名js文件
     .pipe(gulp.dest('./dist/js'))

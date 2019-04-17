@@ -12,4 +12,9 @@ em {
 
 i {
   display: block;
+  font-style: normal;
+}
+
+input, select {
+  outline: none;
 }
