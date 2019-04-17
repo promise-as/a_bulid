@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  overflow-y: hidden;
+}
+
 .header {
   height: 82px;
 }
