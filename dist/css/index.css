@@ -399,11 +399,12 @@ body {
   width: 100%;
   height: 1371px;
   background: url("../images/bg/bg3.png") no-repeat;
+  /*条件*/
 }
 
 .publish .condition {
-  border: 1px solid #cccccc;
   float: left;
+  /*课本*/
 }
 
 .publish .condition .title {
@@ -527,7 +528,6 @@ body {
 .publish .condition .modify .modify-detail {
   width: 850px;
   height: 226px;
-  border: 1px solid #cccccc;
   float: right;
 }
 
@@ -589,6 +589,7 @@ body {
   color: #445cec;
   border-radius: 15px;
   margin-right: 20px;
+  font-size: 14px;
 }
 
 .publish .condition .modify .modify-detail .download .versions:nth-of-type(2) {
@@ -605,6 +606,7 @@ body {
   padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 14px;
 }
 
 .publish .condition .modify .modify-detail .download .advisory .icon {
@@ -620,6 +622,7 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .publish .condition .indicator span {
@@ -636,4 +639,370 @@ body {
 .publish .condition .indicator span.active {
   width: 44px;
   border-radius: 5px;
+}
+
+.publish .condition .textbook {
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.publish .condition .textbook .item {
+  width: 420px;
+  height: 158px;
+  background: #FFFFFF;
+  border-top-right-radius: 28px;
+  position: absolute;
+  left: 0;
+}
+
+.publish .condition .textbook .item .icon {
+  width: 126px;
+  height: 170px;
+  background: url("../images/icon/textbook3.png") no-repeat;
+  margin-top: -14px;
+  float: left;
+}
+
+.publish .condition .textbook .item .textbook-detail {
+  width: 292px;
+  float: left;
+  padding-top: 26px;
+  padding-left: 28px;
+  padding-right: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.publish .condition .textbook .item .textbook-detail .textbook-title {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 22px;
+}
+
+.publish .condition .textbook .item .textbook-detail .versions {
+  font-size: 14px;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #445cec;
+  color: #445cec;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.publish .condition .textbook .item .textbook-detail .versions:nth-of-type(2) {
+  border: 1px solid #df4839;
+  color: #df4839;
+  margin-right: 0;
+}
+
+.publish .condition .textbook .item .textbook-detail .advisory {
+  height: 38px;
+  line-height: 38px;
+  background: #df4839;
+  color: #FFFFFF;
+  float: right;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 24px;
+  margin-right: -27px;
+  font-size: 14px;
+  border-top-left-radius: 12px;
+}
+
+.publish .condition .textbook .item .textbook-detail .advisory .advisory-icon {
+  width: 20px;
+  height: 12px;
+  background: url("../images/icon/half_arrows.png") no-repeat;
+  display: inline-block;
+}
+
+.publish .condition .textbook .item:nth-of-type(2) {
+  left: 128px;
+}
+
+.publish .condition .textbook .item:nth-of-type(2) .icon {
+  background: url("../images/icon/textbook4.png") no-repeat;
+}
+
+.publish .condition .textbook .item:nth-of-type(3) {
+  left: 256px;
+}
+
+.publish .condition .textbook .item:nth-of-type(3) .icon {
+  background: url("../images/icon/textbook5.png") no-repeat;
+}
+
+.publish .condition .textbook .item:nth-of-type(4) {
+  left: 384px;
+}
+
+.publish .condition .textbook .item:nth-of-type(4) .icon {
+  background: url("../images/icon/textbook6.png") no-repeat;
+}
+
+.publish .condition .textbook .item:nth-of-type(5) {
+  left: 512px;
+}
+
+.publish .condition .textbook .item:nth-of-type(5) .icon {
+  background: url("../images/icon/textbook7.png") no-repeat;
+}
+
+.publish .condition .textbook .item:nth-of-type(6) {
+  left: 640px;
+}
+
+.publish .condition .textbook .item:nth-of-type(6) .icon {
+  background: url("../images/icon/textbook8.png") no-repeat;
+}
+
+.publish .condition .textbook .item:nth-of-type(7) {
+  left: 768px;
+}
+
+.publish .condition .textbook .item:nth-of-type(7) .icon {
+  background: url("../images/icon/textbook9.png") no-repeat;
+}
+
+/*资料*/
+.data {
+  text-align: center;
+  /*真题*/
+}
+
+.data .title {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.data .title .icon {
+  width: 26px;
+  height: 26px;
+  background: url("../images/icon/left_vertical.png") no-repeat;
+  display: inline-block;
+}
+
+.data .title .icon:nth-of-type(2) {
+  background: url("../images/icon/right_vertical.png") no-repeat;
+}
+
+.data .title .text {
+  font-size: 38px;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.data .title .text strong {
+  color: #445cec;
+  font-weight: bold;
+}
+
+.data .container {
+  height: 446px;
+  background: url("../images/bg/bg4.png") no-repeat;
+  margin-top: 40px;
+}
+
+.data .data-content {
+  width: 385px;
+  float: left;
+}
+
+.data .data-content .data-front {
+  width: 90px;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-left: 10px;
+  padding-top: 6px;
+}
+
+.data .data-content .data-front strong {
+  font-size: 30px;
+}
+
+.data .data-content .prepare-title {
+  font-size: 33px;
+  color: #333333;
+  font-weight: bold;
+  margin-top: 22px;
+}
+
+.data .data-content .free {
+  font-size: 78px;
+  color: #3449cb;
+}
+
+.data .data-content .service {
+  font-size: 18px;
+  color: #333333;
+  margin-top: 10px;
+}
+
+.data .data-content .all {
+  height: 70px;
+  line-height: 70px;
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+
+.data .data-content .get .tel {
+  width: 80%;
+  height: 42px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  margin-top: 20px;
+  outline: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #999999;
+}
+
+.data .data-content .get .tel::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.data .data-content .get .tel::-moz-placeholder {
+  color: #999999;
+}
+
+.data .data-content .get .tel:-ms-input-placeholder {
+  color: #999999;
+}
+
+.data .data-content .get .tel::-ms-input-placeholder {
+  color: #999999;
+}
+
+.data .data-content .get .tel::placeholder {
+  color: #999999;
+}
+
+.data .data-content .get .get-result {
+  width: 36%;
+  height: 42px;
+  background: #df4839;
+  border-radius: 21px;
+  color: #FFFFFF;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.data .sat {
+  float: right;
+  margin-top: 40px;
+  width: 810px;
+  height: 440px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 26px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*课件*/
+}
+
+.data .sat .topic {
+  height: 90px;
+}
+
+.data .sat .topic .topic-item {
+  width: 240px;
+  height: 90px;
+  background: #FFFFFF;
+  border-right: 12px;
+  padding: 14px 12px 12px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  border-radius: 10px;
+}
+
+.data .sat .topic .topic-item .topic-title {
+  height: 18px;
+}
+
+.data .sat .topic .topic-item .topic-title .icon {
+  width: 18px;
+  height: 13px;
+  background: url("../images/icon/hexagon_blue.png") no-repeat;
+  float: left;
+  margin-top: 3px;
+}
+
+.data .sat .topic .topic-item .topic-title p {
+  width: 200px;
+  font-size: 16px;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.data .sat .topic .topic-item .downloads {
+  font-size: 14px;
+  color: #999999;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.data .sat .topic .topic-item .get-result {
+  float: right;
+  width: 36%;
+  height: 24px;
+  line-height: 24px;
+  background: #df4839;
+  border-radius: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.data .sat .topic .topic-item:nth-of-type(2) {
+  margin: 0 16px;
+}
+
+.data .sat .courseware {
+  height: 210px;
+  margin-top: 50px;
+}
+
+.data .sat .courseware .left {
+  width: 400px;
+  height: 210px;
+  border: 1px solid #cccccc;
+  float: left;
+}
+
+.data .sat .courseware .left .courseware-item .icon {
+  width: 16px;
+  height: 18px;
+  background: url("../images/icon/word_small.png") no-repeat;
+  float: left;
+}
+
+.data .sat .courseware .left .courseware-item span {
+  width: 372px;
+  border: 1px solid #000;
+  float: left;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.data .sat .courseware .right {
+  width: 334px;
+  height: 210px;
+  border: 1px solid #cccccc;
+  float: right;
 }

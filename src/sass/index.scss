@@ -342,8 +342,9 @@ body{
   width: 100%;
   height: 1371px;
   background: url("../images/bg/bg3.png") no-repeat;
+  /*条件*/
   .condition{
-    border: 1px solid #cccccc;
+    //border: 1px solid #cccccc;
     float: left;
     .title{
       text-align: center;
@@ -447,7 +448,7 @@ body{
       .modify-detail{
         width: 850px;
         height: 226px;
-        border: 1px solid #cccccc;
+        //border: 1px solid #cccccc;
         float: right;
         .detail-logo{
           height: 44px;
@@ -497,6 +498,7 @@ body{
             color: #445cec;
             border-radius: 15px;
             margin-right: 20px;
+            font-size: 14px;
             &:nth-of-type(2){
               border: 1px solid #df4839;
               color: #df4839;
@@ -510,6 +512,7 @@ body{
             float: right;
             padding: 0 20px;
             box-sizing: border-box;
+            font-size: 14px;
             .icon{
               width: 20px;
               height: 12px;
@@ -525,6 +528,7 @@ body{
       margin-left: 50%;
       transform: translateX(-50%);
       margin-top: 30px;
+      margin-bottom: 30px;
       span{
         display: block;
         float: left;
@@ -540,5 +544,315 @@ body{
         }
       }
     }
+    /*课本*/
+    .textbook{
+      float: left;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .item{
+        width: 420px;
+        height: 158px;
+        //border: 1px solid #cccccc;
+        background: #FFFFFF;
+        border-top-right-radius: 28px;
+        //float: left;
+        position: absolute;
+        left: 0;
+        .icon{
+          width: 126px;
+          height: 170px;
+          background: url("../images/icon/textbook3.png") no-repeat;
+          margin-top: -14px;
+          float: left;
+        }
+        .textbook-detail{
+          //display: none;
+          width: 292px;
+          float: left;
+          padding-top: 26px;
+          padding-left: 28px;
+          padding-right: 25px;
+          box-sizing: border-box;
+          .textbook-title{
+            font-size: 16px;
+            color: #333333;
+            margin-bottom: 22px;
+          }
+          .versions{
+            font-size: 14px;
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            border: 1px solid #445cec;
+            color: #445cec;
+            border-radius: 15px;
+            margin-right: 10px;
+            &:nth-of-type(2){
+              border: 1px solid #df4839;
+              color: #df4839;
+              margin-right: 0;
+            }
+          }
+          .advisory{
+            height: 38px;
+            line-height: 38px;
+            background: #df4839;
+            color: #FFFFFF;
+            float: right;
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin-top: 24px;
+            margin-right: -27px;
+            font-size: 14px;
+            border-top-left-radius: 12px;
+            .advisory-icon{
+              width: 20px;
+              height: 12px;
+              background: url("../images/icon/half_arrows.png") no-repeat;
+              display: inline-block;
+            }
+          }
+        }
+        &:nth-of-type(2){
+          left: 128px;
+          .icon{
+            background: url("../images/icon/textbook4.png") no-repeat;
+          }
+        }
+        &:nth-of-type(3){
+          left: 256px;
+          .icon{
+            background: url("../images/icon/textbook5.png") no-repeat;
+          }
+        }
+        &:nth-of-type(4){
+          left: 384px;
+          .icon{
+            background: url("../images/icon/textbook6.png") no-repeat;
+          }
+        }
+        &:nth-of-type(5){
+          left: 512px;
+          .icon{
+            background: url("../images/icon/textbook7.png") no-repeat;
+          }
+        }
+        &:nth-of-type(6){
+          left: 640px;
+          .icon{
+            background: url("../images/icon/textbook8.png") no-repeat;
+          }
+        }
+        &:nth-of-type(7){
+          left: 768px;
+          .icon{
+            background: url("../images/icon/textbook9.png") no-repeat;
+          }
+        }
+      }
+    }
   }
+}
+/*资料*/
+.data{
+  //clear: both;
+  text-align: center;
+
+  .title{
+    text-align: center;
+    margin-top: 60px;
+    .icon{
+      width: 26px;
+      height: 26px;
+      background: url("../images/icon/left_vertical.png") no-repeat;
+      //
+      display: inline-block;
+      &:nth-of-type(2){
+        background: url("../images/icon/right_vertical.png") no-repeat;
+      }
+    }
+    .text{
+      font-size: 38px;
+      margin-left: 25px;
+      font-weight: bold;
+      strong{
+        color: #445cec;
+        font-weight: bold;
+      }
+    }
+  }
+  .container{
+    height: 446px;
+    background: url("../images/bg/bg4.png") no-repeat;
+    margin-top: 40px;
+  }
+  .data-content{
+    width: 385px;
+    //margin-top: 44px;
+    float: left;
+    .data-front{
+      width: 90px;
+      font-size: 16px;
+      color: #FFFFFF;
+      margin-left: 10px;
+      padding-top: 6px;
+      strong{
+        font-size: 30px;
+      }
+    }
+    .prepare-title{
+      font-size: 33px;
+      color: #333333;
+      font-weight: bold;
+      margin-top: 22px;
+    }
+    .free{
+      font-size: 78px;
+      color: #3449cb;
+    }
+    .service{
+      font-size: 18px;
+      color: #333333;
+      margin-top: 10px;
+    }
+    .all{
+      height: 70px;
+      line-height: 70px;
+      font-size: 22px;
+      color: #FFFFFF;
+      margin-top: 8px;
+    }
+    .get{
+      .tel{
+        width: 80%;
+        height: 42px;
+        border-radius: 15px;
+        background: #FFFFFF;
+        margin-top: 20px;
+        outline: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        border: 1px solid #999999;
+        &::placeholder{
+          color: #999999;
+        }
+      }
+      .get-result{
+        width: 36%;
+        height: 42px;
+        background: #df4839;
+        border-radius: 21px;
+        color: #FFFFFF;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  /*真题*/
+  .sat{
+    float: right;
+    margin-top: 40px;
+    width: 810px;
+    height: 440px;
+    //border: 1px solid #cccccc;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 26px;
+    box-sizing: border-box;
+    .topic{
+      height: 90px;
+      //border: 1px solid #cccccc;
+      .topic-item{
+        width: 240px;
+        height: 90px;
+        background: #FFFFFF;
+        border-right: 12px;
+        padding: 14px 12px 12px 10px;
+        box-sizing: border-box;
+        float: left;
+        border-radius: 10px;
+        .topic-title{
+          height: 18px;
+          .icon{
+            width: 18px;
+            height: 13px;
+            background: url("../images/icon/hexagon_blue.png") no-repeat;
+            float: left;
+            margin-top: 3px;
+          }
+          p{
+            width: 200px;
+            font-size: 16px;
+            float: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-align: left;
+          }
+        }
+        .downloads{
+          font-size: 14px;
+          color: #999999;
+          text-align: left;
+          margin-left: 20px;
+          margin-top: 10px;
+        }
+        .get-result{
+          float: right;
+          width: 36%;
+          height: 24px;
+          line-height: 24px;
+          background: #df4839;
+          border-radius: 15px;
+          color: #FFFFFF;
+          cursor: pointer;
+          font-size: 14px;
+          margin-top: 2px;
+        }
+        &:nth-of-type(2){
+          margin: 0 16px;
+        }
+      }
+    }
+    /*课件*/
+    .courseware{
+      height: 210px;
+      //border: 1px solid #000;
+      margin-top: 50px;
+      .left{
+        width: 400px;
+        height: 210px;
+        border: 1px solid #cccccc;
+        float: left;
+        .courseware-item{
+          .icon{
+            width: 16px;
+            height: 18px;
+            background: url("../images/icon/word_small.png") no-repeat;
+            float: left;
+          }
+          span{
+            width: 372px;
+            border: 1px solid #000;
+            float: left;
+            margin-left: 10px;
+
+            overflow: hidden;
+            
+          }
+        }
+      }
+      .right{
+        width: 334px;
+        height: 210px;
+        border: 1px solid #cccccc;
+        float: right;
+      }
+    }
+  }
+
 }
