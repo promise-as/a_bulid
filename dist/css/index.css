@@ -1356,10 +1356,10 @@ body {
 
 .class-type .item-content .content-detail .detail-row .row-text span {
   /* overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2; // 显示2行*/
+             text-overflow: ellipsis;
+             display: -webkit-box;
+             -webkit-box-orient: vertical;
+             -webkit-line-clamp: 2; // 显示2行*/
 }
 
 .class-type .item-content .content-detail .detail-row .row-text .free {
@@ -1522,6 +1522,10 @@ body {
 }
 
 /*精彩瞬间*/
+.nice {
+  height: 604px;
+}
+
 .nice .title {
   text-align: center;
   padding-top: 70px;
@@ -1639,4 +1643,124 @@ body {
   margin-top: 20px;
   cursor: pointer;
   margin-right: 2%;
+}
+
+.nice .gift-bag .subhead {
+  float: left;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 26px;
+}
+
+.nice .gift-bag .subhead span {
+  font-size: 16px;
+  background: #df4839;
+  float: left;
+  line-height: 28px;
+  padding: 0 8px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+.nice .gift-bag .subhead p {
+  float: left;
+  line-height: 30px;
+  margin-left: 5px;
+}
+
+/*校区地址*/
+.campus-address .title {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.campus-address .title .icon {
+  width: 26px;
+  height: 26px;
+  background: url("../images/icon/left_vertical.png") no-repeat;
+  display: inline-block;
+}
+
+.campus-address .title .icon:nth-of-type(2) {
+  background: url("../images/icon/right_vertical.png") no-repeat;
+}
+
+.campus-address .title .text {
+  font-size: 38px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.campus-address .title .text strong {
+  color: #445cec;
+  font-weight: bold;
+}
+
+.campus-address .addresses {
+  margin-top: 70px;
+}
+
+.campus-address .item {
+  width: 225px;
+  border: 1px solid #cccccc;
+  border-radius: 14px;
+  float: left;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 32px 2px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.campus-address .item .icon {
+  width: 28px;
+  height: 30px;
+  background: url("../images/icon/location.png") no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -8px;
+  margin-right: 2px;
+}
+
+.campus-address .item .text {
+  max-width: 82%;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.campus-address .item:last-child {
+  margin-right: 0;
+}
+
+.campus-address .item:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(93, 109, 201, 0.8);
+  border-radius: 14px;
+}
+
+.campus-address .item:hover::after {
+  position: absolute;
+  content: "获取详细地址";
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  line-height: 22px;
 }
