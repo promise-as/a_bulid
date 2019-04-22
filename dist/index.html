@@ -5,7 +5,6 @@
   <title>首页</title>
 
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
 
   <script src="https://cdn.bootcss.com/jquery/1.2.3/jquery.min.js"></script>
@@ -100,26 +99,26 @@
         <p class="result-header">2019年一级建造师报考条件在线审核</p>
         <div class="check-item">
           <p class="title">学历</p>
-          <input type="radio" id="school1" name="check-item" value="大专以下">
+          <input type="radio" id="school1" name="check-item1" value="大专以下" checked="checked">
           <label class="item-label" for="school1">大专以下</label>
 
-          <input type="radio" id="school2" name="check-item" value="大专">
+          <input type="radio" id="school2" name="check-item1" value="大专">
           <label class="item-label" for="school2">大专</label>
 
-          <input type="radio" id="school3" name="check-item" value="本科及以上">
+          <input type="radio" id="school3" name="check-item1" value="本科及以上">
           <label class="item-label" for="school3">本科及以上</label>
 
           <input type="hidden" class="user-education">
         </div>
         <div class="check-item">
           <p class="title">工作年限</p>
-          <input type="radio" id="job1" name="check-item" value="1-3年">
+          <input type="radio" id="job1" name="check-item2" value="1-3年">
           <label class="item-label" for="job1">1-3年</label>
 
-          <input type="radio" id="job2" name="check-item" value="4-6年">
+          <input type="radio" id="job2" name="check-item2" value="4-6年">
           <label class="item-label" for="job2">4-6年</label>
 
-          <input type="radio" id="job3" name="check-item" value="7年以上">
+          <input type="radio" id="job3" name="check-item2" value="7年以上">
           <label class="item-label" for="job3">7年以上</label>
 
           <input type="hidden" class="user-job">
@@ -127,10 +126,10 @@
 
         <div class="check-item">
           <p class="title">您的专业</p>
-          <input type="radio" id="major1" name="check-item" value="工程及工程经济类">
+          <input type="radio" id="major1" name="check-item3" value="工程及工程经济类">
           <label class="item-label" for="major1">工程及工程经济类</label>
 
-          <input type="radio" id="major2" name="check-item" value="其他">
+          <input type="radio" id="major2" name="check-item3" value="其他">
           <label class="item-label" for="major2">其他</label>
 
           <input type="hidden" class="user-major">
@@ -234,44 +233,78 @@
         </div>
 
         <div class="modify">
-          <i class="modify-logo"></i>
-          <div class="modify-detail">
-            <i class="detail-logo"></i>
-            <div class="introduce">
-              <p class="introduce-title">
-                <strong>改动介绍</strong>（2018年市政公用工程管理与实务一门课变 动主要有以下几点）
-              </p>
-              <li class="introduce-content">
-                <i class="icon"></i>
-                <p>园林绿化的内容全部删除。
-                  涉及章节 包括第一章1K417000城市绿化与园林附 属工程和第三章1K431020城市绿化的有 关规定两部分。
+          <div class="modify-item">
+            <i class="modify-logo"></i>
+            <div class="modify-detail">
+              <i class="detail-logo"></i>
+              <div class="introduce">
+                <p class="introduce-title">
+                  <strong>改动介绍</strong>（2018年市政公用工程管理与实务一门课变 动主要有以下几点）
                 </p>
-              </li>
-              <li class="introduce-content">
-                <i class="icon"></i>
-                <p>
-                  新增城市综合管廊的相关内容。涉及 章节包括第一章1K415040城市综合管廊 ......
-                </p>
-              </li>
+                <li class="introduce-content">
+                  <i class="icon"></i>
+                  <p>园林绿化的内容全部删除。
+                    涉及章节 包括第一章1K417000城市绿化与园林附 属工程和第三章1K431020城市绿化的有 关规定两部分。
+                  </p>
+                </li>
+                <li class="introduce-content">
+                  <i class="icon"></i>
+                  <p>
+                    新增城市综合管廊的相关内容。涉及 章节包括第一章1K415040城市综合管廊 ......
+                  </p>
+                </li>
+              </div>
+              <div class="download">
+                <a href="javascript:void (0)" class="versions">电子版下载</a>
+                <a href="javascript:void (0)" class="versions">索取纸质版</a>
+                <a href="javascript:void (0)" class="advisory">
+                  咨询改版详情
+                  <i class="icon"></i>
+                </a>
+              </div>
             </div>
-            <div class="download">
-              <a href="javascript:void (0)" class="versions">电子版下载</a>
-              <a href="javascript:void (0)" class="versions">索取纸质版</a>
-              <a href="javascript:void (0)" class="advisory">
-                咨询改版详情
-                <i class="icon"></i>
-              </a>
+          </div>
+          <div class="modify-item active">
+            <i class="modify-logo"></i>
+            <div class="modify-detail">
+              <i class="detail-logo"></i>
+              <div class="introduce">
+                <p class="introduce-title">
+                  <strong>改动介绍</strong>（2018年市政公用工程管理与实务一门课变 动主要有以下几点）
+                </p>
+                <li class="introduce-content">
+                  <i class="icon"></i>
+                  <p>从总体的目录上来看、2018年一建工程经 济变化不大、只有两个小节的删除，说是 删除，其实更 可以看做“兼并重组”。 原来的内
+                    容并没有发生删除，而是进行了 合并。
+                  </p>
+                </li>
+                <li class="introduce-content">
+                  <i class="icon"></i>
+                  <p>
+                    第一章中“设备租赁与购买方案的比选分 析”原是一个单独的小节、在2018年教材 中，合并到 【设备更新分析】小节中， 内......
+                  </p>
+                </li>
+              </div>
+              <div class="download">
+                <a href="javascript:void (0)" class="versions">电子版下载</a>
+                <a href="javascript:void (0)" class="versions">索取纸质版</a>
+                <a href="javascript:void (0)" class="advisory">
+                  咨询改版详情
+                  <i class="icon"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="indicator">
-          <span class="active"></span>
           <span></span>
+          <span class="active"></span>
         </div>
 
         <!--课本-->
         <div class="textbook">
-          <div class="item">
+          <div class="item active">
             <i class="icon"></i>
             <div class="textbook-detail">
               <p class="textbook-title">通信与广电工程管理与实务</p>
@@ -747,32 +780,145 @@
         <span class="text">全国一线名师亲临授课</span>
         <i class="icon"></i>
       </div>
-      <div class="teacher-item">
-        <p class="cn-name">王树京</p>
-        <p class="en-name">WANGSHUJING</p>
-        <div class="line"></div>
-        <p class="honor">建筑资深导师</p>
-      </div>
+      <div class="teacher-row">
+        <div class="teacher-item active">
+          <div class="small">
+            <p class="cn-name">王树京</p>
+            <p class="en-name">WANGSHUJING</p>
+            <div class="line"></div>
+            <p class="honor">建筑资深导师</p>
+          </div>
+          <div class="big">
+            <span class="cn-name">王树京</span>
+            <a href="javascript:void (0)" class="audition">
+              <i class="icon"></i>
+              点击试听
+            </a>
+            <p class="honor">
+              <i class="icon"></i>
+              建筑资深导师
+            </p>
+            <div class="bg">
+              <span>专业背景</span>
+              <p class="bg-detail">
+                北京工业大学教授，建造师考试大纲编委会
+                编委。具有10多年工程一线项目管理经验。
+              </p>
+            </div>
+            <div class="bg">
+              <span>授课特色</span>
+              <p class="bg-detail">
+                理论与实践相结合，授课简练有深度，代入
+                感极强，命题思路把握精准，考点分析透彻。
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <div class="teacher-item">
-        <p class="cn-name">陈明</p>
-        <p class="en-name">CHENMIGN</p>
-        <div class="line"></div>
-        <p class="honor">市政资深导师</p>
-      </div>
+        <div class="teacher-item ">
+          <div class="small">
+            <p class="cn-name">陈明</p>
+            <p class="en-name">CHENMIGN</p>
+            <div class="line"></div>
+            <p class="honor">市政资深导师</p>
+          </div>
+          <div class="big">
+            <span class="cn-name">陈明</span>
+            <a href="javascript:void (0)" class="audition">
+              <i class="icon"></i>
+              点击试听
+            </a>
+            <p class="honor">
+              <i class="icon"></i>
+              市政资深导师
+            </p>
+            <div class="bg">
+              <span>专业背景</span>
+              <p class="bg-detail">
+                国家级授课名师。主讲市政实务，有“市政
+                之神”和“建造师市政第一人”的美誉。
+              </p>
+            </div>
+            <div class="bg">
+              <span>授课特色</span>
+              <p class="bg-detail">
+                授课思路清晰，重难点突出，紧密结合考试
+                大纲，考情分析到位，授课紧密联系实际，
+                让学员在轻松的环境中学到知识。
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <div class="teacher-item">
-        <p class="cn-name">蔡恒</p>
-        <p class="en-name">CAIHEGN</p>
-        <div class="line"></div>
-        <p class="honor">建筑法规名师</p>
-      </div>
+        <div class="teacher-item">
+          <div class="small">
+            <p class="cn-name">蔡恒</p>
+            <p class="en-name">CAIHEGN</p>
+            <div class="line"></div>
+            <p class="honor">建筑法规名师</p>
+          </div>
+          <div class="big">
+            <span class="cn-name">蔡恒</span>
+            <a href="javascript:void (0)" class="audition">
+              <i class="icon"></i>
+              点击试听
+            </a>
+            <p class="honor">
+              <i class="icon"></i>
+              建筑法规名师
+            </p>
+            <div class="bg">
+              <span>专业背景</span>
+              <p class="bg-detail">
+                华北电力大学法政系教授。从事建造师考试
+                法规科目培训10余年。
+              </p>
+            </div>
+            <div class="bg">
+              <span>授课特色</span>
+              <p class="bg-detail">
+                讲课重点突出，言简意赅，擅于讲复杂问题
+                通俗化，易于理解，逻辑严密的授课风格赢
+                得了广大学员的好评。
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <div class="teacher-item">
-        <p class="cn-name">肖国祥</p>
-        <p class="en-name">XIAOGUOXIANG</p>
-        <div class="line"></div>
-        <p class="honor">资深导师 / 高级工程师</p>
+        <div class="teacher-item">
+          <div class="small">
+            <p class="cn-name">肖国祥</p>
+            <p class="en-name">XIAOGUOXIANG</p>
+            <div class="line"></div>
+            <p class="honor">资深导师 / 高级工程师</p>
+          </div>
+          <div class="big">
+            <span class="cn-name">肖国祥</span>
+            <a href="javascript:void (0)" class="audition">
+              <i class="icon"></i>
+              点击试听
+            </a>
+            <p class="honor">
+              <i class="icon"></i>
+              资深导师 / 高级工程师
+            </p>
+            <div class="bg">
+              <span>专业背景</span>
+              <p class="bg-detail">
+                同济大学建造师辅导班特聘教师。从2006年担
+                任建造师考试培训教师至今。
+              </p>
+            </div>
+            <div class="bg">
+              <span>授课特色</span>
+              <p class="bg-detail">
+                授课清晰透彻，逻辑感强，注重学员学习体验，
+                对历年考题对应考点命中率高，获得广大学员的
+                较高评价。
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <a href="javascript:void (0)" class="get">咨询名师</a>
@@ -890,7 +1036,7 @@
       <p class="phone-number">17722510186</p>
       <a href="javascript:void (0)" class="online-consult">在线咨询</a>
 
-      <span class="black-to-top">回到顶部</span>
+      <a href="javascript:void(0);" class="black-to-top">回到顶部</a>
     </div>
   </div>
 </div>

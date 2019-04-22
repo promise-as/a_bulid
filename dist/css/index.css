@@ -3,6 +3,26 @@ body {
   overflow-y: hidden;
 }
 
+/*容器*/
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+em {
+  font-style: normal;
+}
+
+i {
+  display: block;
+  font-style: normal;
+}
+
+input, select {
+  outline: none;
+}
+
 .warp {
   position: relative;
 }
@@ -522,43 +542,47 @@ body {
           box-sizing: border-box;
 }
 
-.publish .condition .modify .modify-logo {
+.publish .condition .modify .modify-item {
+  display: none;
+}
+
+.publish .condition .modify .modify-item .modify-logo {
   width: 214px;
   height: 228px;
   background: url("../images/icon/textbook1.png") no-repeat;
   float: left;
 }
 
-.publish .condition .modify .modify-detail {
+.publish .condition .modify .modify-item .modify-detail {
   width: 850px;
   height: 226px;
   float: right;
 }
 
-.publish .condition .modify .modify-detail .detail-logo {
+.publish .condition .modify .modify-item .modify-detail .detail-logo {
   height: 44px;
   background: url("../images/icon/textbook1_title.png") no-repeat center;
 }
 
-.publish .condition .modify .modify-detail .introduce {
+.publish .condition .modify .modify-item .modify-detail .introduce {
   margin-top: 30px;
 }
 
-.publish .condition .modify .modify-detail .introduce .introduce-title {
+.publish .condition .modify .modify-item .modify-detail .introduce .introduce-title {
   font-size: 16px;
   color: #333333;
 }
 
-.publish .condition .modify .modify-detail .introduce .introduce-title strong {
+.publish .condition .modify .modify-item .modify-detail .introduce .introduce-title strong {
   font-weight: bold;
 }
 
-.publish .condition .modify .modify-detail .introduce .introduce-content {
+.publish .condition .modify .modify-item .modify-detail .introduce .introduce-content {
   margin-top: 12px;
   float: left;
 }
 
-.publish .condition .modify .modify-detail .introduce .introduce-content .icon {
+.publish .condition .modify .modify-item .modify-detail .introduce .introduce-content .icon {
   width: 13px;
   height: 13px;
   background: url("../images/icon/circle.png") no-repeat;
@@ -566,7 +590,7 @@ body {
   margin-right: 12px;
 }
 
-.publish .condition .modify .modify-detail .introduce .introduce-content p {
+.publish .condition .modify .modify-item .modify-detail .introduce .introduce-content p {
   width: 820px;
   font-size: 14px;
   color: #666666;
@@ -576,13 +600,13 @@ body {
   white-space: nowrap;
 }
 
-.publish .condition .modify .modify-detail .download {
+.publish .condition .modify .modify-item .modify-detail .download {
   width: 100%;
   float: left;
   margin-top: 50px;
 }
 
-.publish .condition .modify .modify-detail .download .versions {
+.publish .condition .modify .modify-item .modify-detail .download .versions {
   float: left;
   height: 30px;
   line-height: 30px;
@@ -596,12 +620,12 @@ body {
   font-size: 14px;
 }
 
-.publish .condition .modify .modify-detail .download .versions:nth-of-type(2) {
+.publish .condition .modify .modify-item .modify-detail .download .versions:nth-of-type(2) {
   border: 1px solid #df4839;
   color: #df4839;
 }
 
-.publish .condition .modify .modify-detail .download .advisory {
+.publish .condition .modify .modify-item .modify-detail .download .advisory {
   height: 38px;
   line-height: 38px;
   background: #df4839;
@@ -613,11 +637,23 @@ body {
   font-size: 14px;
 }
 
-.publish .condition .modify .modify-detail .download .advisory .icon {
+.publish .condition .modify .modify-item .modify-detail .download .advisory .icon {
   width: 20px;
   height: 12px;
   background: url("../images/icon/half_arrows.png") no-repeat;
   display: inline-block;
+}
+
+.publish .condition .modify .modify-item.active {
+  display: block;
+}
+
+.publish .condition .modify .modify-item:nth-of-type(2) .modify-logo {
+  background: url("../images/icon/textbook2.png") no-repeat;
+}
+
+.publish .condition .modify .modify-item:nth-of-type(2) .modify-detail .detail-logo {
+  background: url("../images/icon/textbook2_title.png") no-repeat center;
 }
 
 .publish .condition .indicator {
@@ -649,16 +685,22 @@ body {
   float: left;
   width: 100%;
   height: 100%;
-  position: relative;
 }
 
 .publish .condition .textbook .item {
-  width: 420px;
   height: 158px;
   background: #FFFFFF;
   border-top-right-radius: 28px;
-  position: absolute;
-  left: 0;
+  float: left;
+}
+
+.publish .condition .textbook .item.active {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.publish .condition .textbook .item.active .textbook-detail {
+  display: block;
 }
 
 .publish .condition .textbook .item .icon {
@@ -670,6 +712,7 @@ body {
 }
 
 .publish .condition .textbook .item .textbook-detail {
+  display: none;
   width: 292px;
   float: left;
   padding-top: 26px;
@@ -727,48 +770,24 @@ body {
   display: inline-block;
 }
 
-.publish .condition .textbook .item:nth-of-type(2) {
-  left: 128px;
-}
-
 .publish .condition .textbook .item:nth-of-type(2) .icon {
   background: url("../images/icon/textbook4.png") no-repeat;
-}
-
-.publish .condition .textbook .item:nth-of-type(3) {
-  left: 256px;
 }
 
 .publish .condition .textbook .item:nth-of-type(3) .icon {
   background: url("../images/icon/textbook5.png") no-repeat;
 }
 
-.publish .condition .textbook .item:nth-of-type(4) {
-  left: 384px;
-}
-
 .publish .condition .textbook .item:nth-of-type(4) .icon {
   background: url("../images/icon/textbook6.png") no-repeat;
-}
-
-.publish .condition .textbook .item:nth-of-type(5) {
-  left: 512px;
 }
 
 .publish .condition .textbook .item:nth-of-type(5) .icon {
   background: url("../images/icon/textbook7.png") no-repeat;
 }
 
-.publish .condition .textbook .item:nth-of-type(6) {
-  left: 640px;
-}
-
 .publish .condition .textbook .item:nth-of-type(6) .icon {
   background: url("../images/icon/textbook8.png") no-repeat;
-}
-
-.publish .condition .textbook .item:nth-of-type(7) {
-  left: 768px;
 }
 
 .publish .condition .textbook .item:nth-of-type(7) .icon {
@@ -1077,7 +1096,7 @@ body {
   float: left;
   margin-right: 18px;
   border-radius: 12px;
-  margin-top: 70px;
+  margin-top: 46px;
   padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1478,36 +1497,131 @@ body {
   margin-bottom: 65px;
 }
 
-.teacher .teacher-item .cn-name {
+.teacher .teacher-item .small .cn-name {
   font-size: 24px;
   font-weight: bold;
 }
 
-.teacher .teacher-item .en-name {
+.teacher .teacher-item .small .en-name {
   line-height: 26px;
 }
 
-.teacher .teacher-item .line {
+.teacher .teacher-item .small .line {
   width: 24px;
   height: 2px;
   background: #FFFFFF;
   margin-top: 182px;
 }
 
-.teacher .teacher-item .honor {
+.teacher .teacher-item .small .honor {
   margin-top: 12px;
+}
+
+.teacher .teacher-item .big {
+  display: none;
+  padding-top: 34px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.teacher .teacher-item .big .cn-name {
+  font-size: 24px;
+  font-weight: bold;
+  float: left;
+}
+
+.teacher .teacher-item .big .audition {
+  border: 1px solid #FFFFFF;
+  float: left;
+  padding: 10px 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 16px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  margin-left: 24%;
+}
+
+.teacher .teacher-item .big .audition .icon {
+  width: 9px;
+  height: 12px;
+  background: url("../images/icon/pause.png") no-repeat;
+  float: left;
+  margin-right: 10px;
+}
+
+.teacher .teacher-item .big .honor {
+  clear: both;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.teacher .teacher-item .big .honor .icon {
+  width: 14px;
+  height: 14px;
+  background: url("../images/icon/hexagon_small.png") no-repeat;
+  float: left;
+  margin-right: 14px;
+  margin-top: 2px;
+}
+
+.teacher .teacher-item .big .bg {
+  width: 61%;
+  margin-top: 20px;
+}
+
+.teacher .teacher-item .big .bg span {
+  padding: 0 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFFFFF;
+  color: #df4839;
+  border-radius: 5px;
+  line-height: 24px;
+}
+
+.teacher .teacher-item .big .bg .bg-detail {
+  line-height: 22px;
+  margin-top: 5px;
 }
 
 .teacher .teacher-item:nth-last-child(3) {
   background: url("../images/icon/teacher2.png") no-repeat;
 }
 
+.teacher .teacher-item:nth-last-child(3).active {
+  background: url("../images/icon/teacher2_big.png") no-repeat;
+}
+
 .teacher .teacher-item:nth-last-child(2) {
   background: url("../images/icon/teacher3.png") no-repeat;
 }
 
+.teacher .teacher-item:nth-last-child(2).active {
+  background: url("../images/icon/teacher3_big.png") no-repeat;
+}
+
 .teacher .teacher-item:last-child {
   background: url("../images/icon/teacher4.png") no-repeat;
+}
+
+.teacher .teacher-item:last-child.active {
+  background: url("../images/icon/teacher4_big.png") no-repeat;
+}
+
+.teacher .teacher-item.active {
+  width: 520px;
+  height: 342px;
+  background: url("../images/icon/teacher1_big.png") no-repeat;
+  margin-top: 50px;
+}
+
+.teacher .teacher-item.active .big {
+  display: block;
+}
+
+.teacher .teacher-item.active .small {
+  display: none;
 }
 
 .teacher .get {
@@ -1609,7 +1723,7 @@ body {
   width: 23%;
   height: 42px;
   background: #FFFFFF;
-  margin-top: 20px;
+  margin-top: 12px;
   margin-right: 2%;
   outline: 0;
   padding-left: 20px;
@@ -1644,7 +1758,7 @@ body {
   height: 42px;
   background: #df4839;
   color: #FFFFFF;
-  margin-top: 20px;
+  margin-top: 12px;
   cursor: pointer;
   margin-right: 2%;
 }
@@ -1654,7 +1768,7 @@ body {
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .nice .gift-bag .subhead span {
@@ -1842,6 +1956,11 @@ body {
   background: url("../images/bg/ad.png") no-repeat;
 }
 
+.ad .container {
+  height: 92px;
+  background: url("../images/bg/ad2.png") no-repeat;
+}
+
 .ad .free-get {
   float: right;
   margin-top: 25px;
@@ -1908,10 +2027,9 @@ body {
 .right-nav {
   width: 100px;
   height: 358px;
-  border: 1px solid #cccccc;
   border-radius: 50px;
-  position: absolute;
-  top: 40px;
+  position: fixed;
+  top: 25%;
   right: 10px;
   margin: auto;
   background: #df4839;
@@ -1975,8 +2093,9 @@ body {
 .right-nav .phone-number {
   width: 100%;
   position: absolute;
-  top: 246px;
+  top: 254px;
   color: #FFFFFF;
+  white-space: nowrap;
 }
 
 .right-nav .online-consult {
@@ -1986,13 +2105,14 @@ body {
   background: #feffb8;
   color: #ce322a;
   position: absolute;
-  top: 270px;
+  top: 280px;
+  left: 12px;
   border-radius: 15px;
 }
 
 .right-nav .black-to-top {
   position: absolute;
-  top: 310px;
+  top: 320px;
   left: 0;
   right: 0;
   margin: auto;
