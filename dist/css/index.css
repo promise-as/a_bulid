@@ -23,10 +23,6 @@ input, select {
   outline: none;
 }
 
-.warp {
-  position: relative;
-}
-
 .header {
   height: 82px;
 }
